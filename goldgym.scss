@@ -1,0 +1,46 @@
+/* ************************* */
+/* Gold Gym CSS */
+/* ************************* */
+
+// import the utility css and bootstrap
+@import 'asset/css/utility.scss';
+@import 'vendor/bootstrap';
+// set the colors
+$color-1: #f1eb30; // yellow
+$color-2: #282828; //dark-grey
+$color-3: #e16e2c; //orange
+// set the banner and the footer bg to black
+#goldgym .page-banner,
+#goldgym .page-footer {
+    background-color: #000;
+}
+
+// set the content to dark-grey
+#goldgym .page-content {
+    background-color: $color-2;
+    .container > div {
+        max-width: 992px; // set the maximum width of the container inside it
+        margin: 0 auto; // and center it
+    }
+}
+
+#goldgym form {
+    label {
+        color: #fff; //set the label color text to white
+    }
+    // change the styling for the submit button
+    button[type="submit"] {
+        width: 100%;
+        background-color: $color-3;
+        border-color: $color-3;
+        color: #fff;
+        font-weight: 700;
+    }
+    @media (max-width: 768px) {
+        .training > div:nth-child(2) label,
+        .payment > div:nth-child(2) label {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/* *********************************** */
+/* Utility class */
+/* *********************************** */
+
+ul.nodots > li {
+	list-style-type: none !important;
+}
+.nopadding {
+	padding: 0 !important;
+}
+.nomargin {
+	margin: 0;
+}
+.block {
+	display: block;
+}
+.spacepad {
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+.spacemar {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
