@@ -1,10 +1,15 @@
 /* ************************* */
+
+
 /* Gold Gym CSS */
+
+
 /* ************************* */
 
 // import the utility css and bootstrap
 @import 'asset/css/utility.scss';
 @import 'vendor/bootstrap';
+@import 'vendor/font-awesome/font-awesome';
 // set the colors
 $color-1: #f1eb30; // yellow
 $color-2: #282828; //dark-grey
@@ -43,4 +48,35 @@ $color-3: #e16e2c; //orange
             padding-right: 30px;
         }
     }
+}
+
+#goldgym .rules {
+    color: #fff;
+}
+
+#goldgym .page-footer {
+    .arrow {
+        text-align: center;
+        color: #fff;
+        margin-top: -44px;
+        cursor: pointer;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        .fa {
+            border: 6px solid #000;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #000;
+        }
+    }
+}
+
+.upward {
+    transform: rotate(180deg);
+}
+.downward {
+    transform: rotate(0deg);
 }
