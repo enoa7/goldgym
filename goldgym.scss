@@ -77,6 +77,26 @@ $color-3: #e16e2c; //orange
 .upward {
     transform: rotate(180deg);
 }
+
 .downward {
     transform: rotate(0deg);
+}
+
+.language {
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    a {
+        color: #fff;
+        cursor: pointer;
+    }
+}
+#goldgym.ind [data-language="ind"],
+#goldgym.eng [data-language="eng"]{
+    display: block;
+}
+#goldgym.ind [data-language="eng"],
+#goldgym.eng [data-language="ind"] {
+    display: none;
 }

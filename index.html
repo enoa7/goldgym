@@ -17,9 +17,14 @@
 </head>
 
 <body>
-    <div id="goldgym">
+    <div id="goldgym" class="ind">
         <div class="page-banner">
             <div class="container">
+                <div class="language">
+                    <span class="ind"><a href="#ind">IND</a></span>
+                    <span> <b>/</b> </span>
+                    <span class="eng"><a href="#eng">ENG</a></span>
+                </div>
                 <div class="spacepad">
                     <img class="img-responsive center-block" src="asset/img/goldgym-competition.jpg" alt="Gold Gym">
                 </div>
@@ -32,7 +37,8 @@
                     <form class="form-horizontal">
                         <div class="form-group">
                             <div class="col-xs-12 col-sm-3">
-                                <label for="inputName">Name</label>
+                                <label data-language="eng" for="inputName">Name</label>
+                                <label data-language="ind" for="inputName">Nama</label>
                             </div>
                             <div class="col-xs-12 col-sm-9">
                                 <input type="text" class="form-control" id="inputName">
@@ -40,7 +46,8 @@
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12 col-sm-3">
-                                <label for="inputEmail">Email Address</label>
+                                <label data-language="eng" for="inputEmail">Email Address</label>
+                                <label data-language="ind" for="inputEmail">Alamat Email</label>
                             </div>
                             <div class="col-xs-12 col-sm-9">
                                 <input type="email" class="form-control" id="inputEmail">
@@ -48,7 +55,8 @@
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12 col-sm-3">
-                                <label for="inputPhone">Phone</label>
+                                <label data-language="eng" for="inputPhone">Phone</label>
+                                <label data-language="ind" for="inputPhone">Telepon</label>
                             </div>
                             <div class="col-xs-12 col-sm-9">
                                 <input type="number" class="form-control" id="inputPhone">
@@ -56,7 +64,8 @@
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12 col-sm-3">
-                                <label for="inputDob">Date of Birth</label>
+                                <label data-language="eng" for="inputDob">Date of Birth</label>
+                                <label data-language="ind" for="inputDob">Tanggal Lahir</label>
                             </div>
                             <div class="col-xs-12 col-sm-9">
                                 <input type="date" class="form-control" id="inputDob" placeholder="dd/mm/yyyy">
@@ -193,6 +202,11 @@
         $('.arrow').click(function(){
             $(this).toggleClass('downward upward');
             $('.rules').slideToggle();
+        });
+
+        $('.language > span').click(function() {
+            var getLang = $(this).attr('class');
+            $('#goldgym').attr('class', getLang);
         });
 
     });
